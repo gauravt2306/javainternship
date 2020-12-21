@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.text.*;
-public class LoanAssistant extends JFrame
+public class LoanAssistantApp extends JFrame
 {
 JLabel balanceLabel = new JLabel();
 JTextField balanceTextField = new JTextField();
@@ -25,15 +25,13 @@ Font myFont = new Font("Arial", Font.PLAIN, 16);
 Color lightYellow = new Color(255, 255, 128);
 boolean computePayment;
 public static void main(String args[])
-/* Complete Project Code */
-
 {
-// create frame
+// To Create Frame
 new LoanAssistant().show();
 }
 public LoanAssistant()
 {
-// frame constructor
+// Constructing Frame
 setTitle("Loan Assistant Application");
 setResizable(false);
 addWindowListener(new WindowAdapter()
